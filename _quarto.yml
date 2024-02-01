@@ -12,7 +12,31 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
+    - chapters/changelog.qmd
+    - part: chapters/contributing/index.qmd
+      chapters:
+        - chapters/contributing/project_structure.qmd
+        - chapters/contributing/raising_issues.qmd
+        - chapters/contributing/raising_pr.qmd
+        - chapters/contributing/adding_a_course.qmd
+        - chapters/contributing/api_project_structure.qmd
+        - chapters/contributing/improving_documentation.qmd
+    - chapters/environment_setup.qmd
+    - part: chapters/localization/index.qmd
+      chapters:
+        - chapters/localization/client.qmd
+        - chapters/localization/backend.qmd
+    - part: chapters/technical_guide/index.qmd
+      chapters:
+        - chapters/technical_guide/api_guide/api_structure.qmd
+        - chapters/technical_guide/api_guide/api_authentication_flow.qmd
+        - chapters/technical_guide/api_guide/jwt_token_management.qmd
+        - chapters/technical_guide/api_guide/rbac_handler_flow.qmd
+        - chapters/technical_guide/ci_workflow.qmd
+        - chapters/technical_guide/deployment_guide.qmd
+        - chapters/technical_guide/reviewing_pr.qmd
+        - chapters/technical_guide/secrets_and_security.qmd
+
     - references.qmd
 
 bibliography: references.bib
@@ -20,6 +44,7 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+    number-sections: false
 
 babelquarto:
   languagecodes:
@@ -36,3 +61,4 @@ description-ar: description in ar
 author-en: author in en
 author-ar: author in ar
 lang: en
+
